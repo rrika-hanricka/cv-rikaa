@@ -1,0 +1,15 @@
+/* css/zoom.css */
+/* css/zoom.css - Pop-up saat foto atau kartu diklik (memperbesar). */
+
+#zoom .kaca:hover{background-color:var(--glass);border-color:var(--glass-line)}
+.grid .kaca,.polaroid{cursor:zoom-in}
+#zoom{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:1rem;background:rgba(15,4,8,.9);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+#zoom.buka{display:grid;animation:muncul .25s ease}
+@keyframes muncul{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+#zoom .isi{position:relative;max-width:min(94vw,680px);max-height:92vh;overflow:auto;text-align:center}
+#zoom .polaroid{display:inline-block;transform:none!important;cursor:default;padding:.7rem .7rem 2rem}
+#zoom .polaroid img{width:auto;max-width:86vw;max-height:76vh}
+#zoom .polaroid.utama{max-width:none}
+#zoom .kaca{text-align:left;font-size:1.15rem;padding:2.2rem;cursor:default;transform:none!important}
+#zoom .kaca h3{font-size:1.6rem;margin-bottom:.2rem}
+#zoom .tutup{position:absolute;top:.4rem;right:.4rem;z-index:2;width:2.4rem;height:2.4rem;border-radius:50%;border:1px solid var(--glass-line);background:var(--maroon);color:#fff;font:700 1.2rem var(--head);cursor:pointer}

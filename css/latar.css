@@ -1,0 +1,6 @@
+/* css/latar.css */
+/* css/latar.css - Latar halaman: gradasi maroon (tanpa video) dan kanvas bintang kursor.
+   Video latar hanya dipakai di bagian Idol (lihat css/idol.css). */
+
+body{background:radial-gradient(1200px 700px at 80% -10%,#6A1727 0%,transparent 60%),linear-gradient(160deg,#1B070C,#2E0C14 55%,#3A0F18);background-attachment:fixed}
+#bintang{position:fixed;inset:0;width:100%;height:100%;z-index:50;pointer-events:none}

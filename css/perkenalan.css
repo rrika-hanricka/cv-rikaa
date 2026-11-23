@@ -1,0 +1,13 @@
+/* css/perkenalan.css */
+/* css/perkenalan.css - Bagian Perkenalan: biodata dan warna favorit. */
+
+.biodata{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
+.biodata .lebar{grid-column:1/-1}
+.biodata .kaca:hover{transform:translateY(-4px);border-color:var(--accent)}
+.label{font:700 .8rem var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem}
+.nilai{font:600 1.25rem/1.4 var(--head)}
+.nama{font:800 clamp(1.8rem,5vw,2.8rem) var(--head);letter-spacing:.04em}
+.cita{margin-top:.5rem;color:var(--muted)}
+.warna{display:flex;gap:.5rem;margin-top:.9rem}
+.warna i{width:2rem;height:2rem;border-radius:50%;border:2px solid rgba(255,255,255,.35);transition:transform .25s}
+.warna i:hover{transform:scale(1.25)}

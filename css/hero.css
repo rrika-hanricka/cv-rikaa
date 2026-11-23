@@ -1,0 +1,11 @@
+/* css/hero.css */
+/* css/hero.css - Beranda: nama, foto bulat, dan latar foto kamera. */
+
+#beranda{position:relative;min-height:100svh;display:flex;align-items:center;padding:6rem 0 3rem;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(rgba(27,7,12,.5),rgba(27,7,12,.82)),url("../assets/img/hero-latar.jpg") center 55%/cover no-repeat;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent)}
+.hero{position:relative;z-index:1;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
+.kecil{font:500 1.1rem var(--head);color:var(--brown);letter-spacing:.08em}
+#beranda h1{font:800 clamp(4.2rem,15vw,9.5rem)/.95 var(--head);letter-spacing:-.04em;color:var(--accent);text-shadow:0 6px 30px rgba(0,0,0,.45)}
+.peran{font:500 clamp(1.1rem,2.6vw,1.6rem) var(--head);color:var(--brown);margin-top:1rem}
+.salam{max-width:34rem;margin-top:1.2rem;color:var(--muted)}
+.hero-foto{width:100%;max-width:280px;aspect-ratio:1;object-fit:cover;border-radius:50%;border:4px solid var(--glass-line);box-shadow:0 20px 60px rgba(0,0,0,.55);justify-self:center}

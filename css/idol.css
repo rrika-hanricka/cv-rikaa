@@ -1,0 +1,22 @@
+/* css/idol.css */
+/* css/idol.css - Bagian Idol Kesukaan: video latar, info, dan foto polaroid. */
+
+/* Bagian Idol: satu-satunya bagian yang memakai video latar. Video berhenti tepat di akhir bagian ini. */
+#idol{position:relative;padding-top:0}
+#idol .wrap{position:relative;z-index:1;padding-top:5.5rem}
+.idol-bg{position:absolute;inset:0;z-index:0;pointer-events:none}   /* kotak seluas bagian Idol saja, tidak keluar ke bagian lain */
+.idol-bg video{position:sticky;top:0;display:block;width:100%;height:100vh;object-fit:cover}   /* video tetap di layar selama bagian Idol digulir */
+.idol-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(27,7,12,.35),rgba(27,7,12,.5))}
+#idol h2,#idol .sub{text-shadow:0 2px 14px rgba(0,0,0,.8)}
+.idol-info{margin-bottom:1.4rem}
+.idol-info.bias{margin-top:3rem}
+.idol-info h3{font-size:1.5rem;margin-bottom:.4rem}
+.idol-info h3 span{font:600 .75rem var(--head);letter-spacing:.12em;text-transform:uppercase;background:var(--maroon);color:#fff;padding:.2rem .7rem;border-radius:999px;margin-left:.5rem;vertical-align:middle}
+.polaroid-grid{display:grid;grid-template-columns:1fr;gap:1.2rem;align-items:start;margin-bottom:1.2rem}
+.polaroid-grid.tiga{grid-template-columns:repeat(3,1fr)}
+.polaroid{background:#FBEFF0;padding:.5rem .5rem 1.6rem;border-radius:6px;box-shadow:0 12px 30px rgba(0,0,0,.5);transform:rotate(-2.5deg);transition:transform .35s,box-shadow .35s}
+.polaroid:nth-child(even){transform:rotate(2.5deg)}
+.polaroid:hover{transform:rotate(0) scale(1.06);box-shadow:0 20px 44px rgba(0,0,0,.65);z-index:2}
+.polaroid img{display:block;width:100%;height:auto;border-radius:3px}   /* ukuran asli foto, tidak dipotong */
+.polaroid.utama{max-width:760px;margin:0 auto;transform:rotate(-1.2deg)}
+.polaroid.utama:hover{transform:rotate(0) scale(1.02)}

@@ -1,0 +1,8 @@
+/* css/header.css */
+/* css/header.css - Menu navigasi di bagian atas. */
+
+header{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem 1.5rem;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--glass-line)}
+.logo{font:800 1.3rem var(--head);color:var(--accent);text-decoration:none}
+nav ul{display:flex;gap:1.4rem;list-style:none}
+nav a{font:500 .95rem var(--head);color:var(--muted);text-decoration:none;padding:.3rem 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.aktif{color:var(--ink);border-bottom-color:var(--accent)}

@@ -1,0 +1,11 @@
+/* css/pendidikan.css */
+/* css/pendidikan.css - Riwayat Pendidikan: garis waktu dan kegiatan SMA. */
+
+.grid.garis{grid-template-columns:1fr;position:relative;padding-left:2.2rem;gap:1rem}
+.grid.garis::before{content:"";position:absolute;left:.55rem;top:.5rem;bottom:.5rem;width:2px;background:linear-gradient(var(--accent),var(--coklat))}
+.grid.garis .kaca{position:relative;padding:1.2rem 1.5rem}
+.grid.garis .kaca::before{content:"";position:absolute;left:-2.2rem;top:1.5rem;width:.9rem;height:.9rem;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(240,163,174,.25)}
+.waktu{color:var(--accent);font:500 .9rem var(--head);margin:.1rem 0 .5rem}
+.kegiatan{margin:.8rem 0 0 1.1rem;color:var(--muted);font-size:.98rem}
+.kegiatan li{margin-bottom:.5rem}
+.kegiatan b{color:var(--brown);font-family:var(--head)}

@@ -1,0 +1,7 @@
+/* css/kontak.css */
+/* css/kontak.css - Bagian Kontak dan footer. */
+
+.kontak{list-style:none;margin:.6rem 0 0}
+.kontak li{padding:.2rem 0}
+.kontak strong{display:inline-block;min-width:90px;font-family:var(--head)}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:3rem 1rem 2rem}

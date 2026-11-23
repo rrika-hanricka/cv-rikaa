@@ -1,0 +1,12 @@
+/* css/components.css */
+/* css/components.css - Komponen yang dipakai di banyak bagian: kartu (.kaca), tombol, grid. */
+
+.kaca{background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--glass-line);border-radius:16px;padding:1.6rem;box-shadow:0 10px 34px rgba(0,0,0,.4);transition:transform .3s,border-color .3s,background-color .3s}
+.kaca:hover,.kaca:focus-visible{background-color:var(--maroon);border-color:var(--accent);transform:translateY(-4px)}
+.kaca:hover .chip li,.kaca:focus-visible .chip li{background:#5E0B15}
+.kaca:hover .chip li:hover{background:#A8283B}
+.kaca:hover .tombol,.kaca:hover h3 span{background:#5E0B15}
+.tombol{display:inline-block;margin-top:1.6rem;background:var(--maroon);border:1px solid var(--glass-line);color:#fff;text-decoration:none;font:700 1rem var(--head);padding:.75rem 1.4rem;border-radius:999px;transition:background .3s,transform .3s}
+.tombol:hover{background:#A8283B;transform:translateY(-2px)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
+.grid .kaca:hover{transform:translateY(-4px);border-color:var(--accent)}

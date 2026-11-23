@@ -1,0 +1,25 @@
+/* css/base.css */
+/* css/base.css - Dasar: warna, font, reset, gaya umum. Ubah warna di bagian :root. */
+
+:root{
+  --ink:#FBEFF0;            /* teks utama */
+  --muted:#E3C3C7;          /* teks redup */
+  --accent:#F0A3AE;         /* merah muda untuk judul/aksen */
+  --brown:#FFD7DC;          /* judul kecil */
+  --maroon:#8B1E2E;         /* tombol */
+  --coklat:#6B4226;         /* warna coklat saat kartu disorot */
+  --glass:rgba(40,10,16,.58);
+  --glass-line:rgba(255,200,208,.22);
+  --head:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:#1B070C;color:var(--ink);font:1.05rem/1.7 var(--body)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 1.5rem}
+section{padding:5.5rem 0 2rem}
+h2{font:800 2.3rem var(--head);letter-spacing:-.02em}
+h3{font:700 1.2rem var(--head);color:var(--brown)}
+.sub{color:var(--muted);margin:.2rem 0 2rem}

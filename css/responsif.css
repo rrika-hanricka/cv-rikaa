@@ -1,0 +1,17 @@
+/* css/responsif.css */
+/* css/responsif.css - Tampilan HP, gerakan dikurangi, dan cetak. */
+
+@media (max-width:820px){
+  header{padding:.6rem 1rem;flex-direction:column;gap:.3rem}
+  nav ul{gap:.9rem;flex-wrap:wrap;justify-content:center}
+  html{scroll-padding-top:100px}
+  .hero{grid-template-columns:1fr;gap:1.5rem}
+  .hero-foto{order:-1;max-width:200px}
+  .grid,.biodata{grid-template-columns:1fr}
+  .polaroid-grid.tiga{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .tunggu{opacity:1;transform:none;transition:none}
+}
+@media print{#bintang,.idol-bg,header{display:none}body{background:#fff}}

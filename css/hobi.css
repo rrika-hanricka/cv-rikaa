@@ -1,0 +1,6 @@
+/* css/hobi.css */
+/* css/hobi.css - Bagian Hobi: label musik dan olahraga. */
+
+.chip{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin-top:1rem}
+.chip li{font:600 .9rem var(--head);padding:.35rem .9rem;border-radius:999px;background:rgba(139,30,46,.55);border:1px solid var(--glass-line);transition:background .25s,transform .25s}
+.chip li:hover{background:#A8283B;transform:translateY(-2px)}
